@@ -1,0 +1,8 @@
+import requests  # Import the requests library
+import json
+
+response = requests.get('https://meowfacts.herokuapp.com/')
+  
+payload = response.json()
+
+print(payload['data'])
